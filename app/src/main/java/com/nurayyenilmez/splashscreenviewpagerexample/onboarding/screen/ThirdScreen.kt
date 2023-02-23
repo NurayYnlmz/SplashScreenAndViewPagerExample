@@ -33,7 +33,7 @@ class ThirdScreen : Fragment() {
     }
 
     private fun onBoardingFinished() {
-        val sharedPreferences=requireActivity().getSharedPreferences("OnBoarding", Context.MODE_PRIVATE)
+        val sharedPreferences=requireActivity().getSharedPreferences("onBoarding", Context.MODE_PRIVATE)
         val editor=sharedPreferences.edit()
         editor.putBoolean("Finished",true)
         editor.apply()
